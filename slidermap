@@ -40,8 +40,8 @@ body * {
 <div id='after' class='map'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoia21wZXJoYW0iLCJhIjoiY2pid2ZweXRpMmRtdzMzbzB5bnJleDlwayJ9.lz0J18oop1su6_5kO58qnw';
-var map = new mapboxgl.Map({
-    container: 'map',
+var beforeMap = new mapboxgl.Map({
+    container: 'before',
     zoom: 9,
     center: [43.2240003,-70.7927459],
     style: 'mapbox://styles/mapbox/satellite-v9',
@@ -50,9 +50,10 @@ var map = new mapboxgl.Map({
 
 var afterMap = new mapboxgl.Map({
     container: 'after',
-    style: 'mapbox://styles/mapbox/dark-v9',
-    center: [0, 0],
-    zoom: 0
+    zoom: 9,
+    center: [43.2240003,-70.7927459],
+    style: 'mapbox://styles/mapbox/satellite-v9',
+    hash: false
 });
 
 var map = new mapboxgl.Compare(beforeMap, afterMap, {
