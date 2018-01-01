@@ -43,7 +43,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoia21wZXJoYW0iLCJhIjoiY2pid2ZweXRpMmRtdzMzbzB5b
 var beforeMap = new mapboxgl.Map({
     container: 'before',
     zoom: 9,
-    center: [43.2240003,-70.7927459],
+    center: [-70.7927459,43.2240003],
     style: 'mapbox://styles/mapbox/satellite-v9',
     hash: false
 });
@@ -51,7 +51,7 @@ var beforeMap = new mapboxgl.Map({
 var afterMap = new mapboxgl.Map({
     container: 'after',
     zoom: 9,
-    center: [43.2240003,-70.7927459],
+    center: [-70.7927459,43.2240003],
     style: 'mapbox://styles/mapbox/satellite-v9',
     hash: false
 });
