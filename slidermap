@@ -55,7 +55,7 @@ beforeMap.on('load', function () {
         "type": "line",
         "source": {
             type: 'vector',
-            url: 'mapbox://mapbox.mapbox-terrain-v2'
+            url: 'mapbox://styles/mapbox/terrain-v2'
         },
         "source-layer": "contour",
         "layout": {
