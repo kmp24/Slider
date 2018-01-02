@@ -46,23 +46,6 @@ var beforeMap = new mapboxgl.Map({
     center: [-70.7927459,43.2240003],
     style: 'mapbox://styles/mapbox/terrain-v2',
     hash: false
-beforeMap.on('load', function () {
-
-    beforeMap.addLayer({
-        "id": "kmperham.30aptgwr",
-        "type": "line",
-        "source": {
-            type: 'vector',
-            url: 'mapbox://styles/mapbox/satellite-v9'
-        },
-        "source-layer": "contour",
-        "layout": {
-            "line-join": "round",
-            "line-cap": "round"
-        },
-        "paint": {
-            "line-color": "#ff69b4",
-            "line-width": 1
 });
 
 
