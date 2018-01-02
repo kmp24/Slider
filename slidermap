@@ -46,8 +46,6 @@ var beforeMap = new mapboxgl.Map({
     center: [-70.7927459,43.2240003],
     style: 'mapbox://styles/mapbox/terrain-v2',
     hash: false
-});
-
 beforeMap.on('load', function () {
 
     beforeMap.addLayer({
@@ -65,6 +63,8 @@ beforeMap.on('load', function () {
         "paint": {
             "line-color": "#ff69b4",
             "line-width": 1
+});
+
 
 var afterMap = new mapboxgl.Map({
     container: 'after',
