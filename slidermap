@@ -44,10 +44,9 @@ var beforeMap = new mapboxgl.Map({
     container: 'before',
     zoom: 9,
     center: [-70.7927459,43.2240003],
-    style: 'mapbox://styles/mapbox/terrain-v2',
+    style: 'mapbox://styles/mapbox/satellite-v9',
     hash: false
 });
-
 
 var afterMap = new mapboxgl.Map({
     container: 'after',
